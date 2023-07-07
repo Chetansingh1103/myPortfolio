@@ -32,13 +32,13 @@
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Chetan Singh</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error earum illo commodi perferendis neque quis reiciendis laborum numquam, officia dolore eaque sunt. Obcaecati fuga magnam deserunt ad repellat sunt?</p>
+            <h3>And I'm proficient in <span class="multiple-text"></span></h3>
+            <p>I'm a passionate coder who love to solve daily life problem with my skill set and love to work on new tools and technologies. I like to implement my innovative ideas, skills and creativity to accomplishing the projects.</p>
             <div class="social-media">
-                <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/ChetanSingh3301" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/chetan-singh-b91381194/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=in" target="_blank"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#" class="btn">Download Resume</a>
+            <a href="files/Resume--7july2023.pdf" download="Resume - Chetan Singh" class="btn">Download Resume</a>
         </div>
         <div class="home-img">
             <img src="images/WhatsApp Image 2023-07-04 at 12.53.29.jpeg" alt="">
@@ -52,9 +52,18 @@
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Full Stack Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est doloribus adipisci at nostrum quo eaque mollitia rem deleniti! Commodi, doloremque reprehenderit. Iure, quia assumenda possimus quibusdam doloremque sed accusantium quasi.</p>
-            <a href="#" class="btn">Read More</a>
+            <h3>Full Stack Developement</h3>
+            <ul class="about-me-info">
+                <li><p>Currently pursuing Full Stack Development Course by Acciojob.  <i> (Started in august of 2022)</i></p></li>
+                <li><p>Completed Bachelors of Computer Application(BCA) from Guru Gobind Singh Indraprastha University Delhi.  <i> (2019-2022)</i></p></li>
+                <div id="read-more">
+                <li><p>Completed 12th Standard from Sant Nirankari Public School Delhi.  <i>Science(non-med) (Scored 78%) (2017-2019)</i></p></li>
+                <li><p>Completed 10th Standard from Sri Prakash Vidya Niketan at Payakaropeta, Andhra Pradesh.  <i>(Scored 10 CGPA)</i></p></li>
+                <li><p>I was also State level Basket Ball (Captain) and Table Tennis player. </p></li>
+                <li><p>Whenever free i love to listen to different types of music whatever the language it may be.</p></li>
+                </div>
+            </ul>
+            <button class="btn" id="read-more-btn" onclick="myfun()">Read More</button>
         </div>
     </section>
 
@@ -65,32 +74,35 @@
             <div class="portfolio-box">
                 <img src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt eius explicabo neque saepe quod quo obcaecati.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Ticket Booking Backend Application</h4>
+                    <p>This is a Spring Boot Backend application 
+                        where you can book tickets, find shows,etc..
+                         </p>
+                    <a href="https://github.com/Chetansingh1103/Book_My_Show"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="images/boitumelo-X89VSmdDKE0-unsplash.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt eius explicabo neque saepe quod quo obcaecati.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Library Management System</h4>
+                    <p>This is a Spring application where a student 
+                        has card issued, can issue books, etc..</p>
+                    <a href="https://github.com/Chetansingh1103/Student_Library_Management_System"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt eius explicabo neque saepe quod quo obcaecati.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Airline System Booking Application</h4>
+                    <p>this application is to book Airline tickets for the passengers , etc..</p>
+                    <a href="https://github.com/Chetansingh1103/InteractiveAirLineSystemApp"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="images/max-duzij-qAjJk-un3BI-unsplash.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt eius explicabo neque saepe quod quo obcaecati.</p>
+                    <p>Coming soon....</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -101,17 +113,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form id="contactForm" action="#" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" name="name" id="name">
+                <input type="email" placeholder="Email Address" name="email" id="email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile NUmber">
-                <input type="text" placeholder="Subject">
+                <input type="tel" placeholder="Mobile Number" name="mobno" id="mobno">
+                <input type="text" placeholder="Subject" name="subject" id="subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="btn" type="submit" >Send Message</button>
         </form>
     </section>
 
@@ -132,7 +144,7 @@
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-
-    <script src="/script.js"></script>
+      <!-- custom js -->
+    <script src="script.js"></script>
 </body>
 </html>

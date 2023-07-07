@@ -1,3 +1,16 @@
+//-----------------read-more visibility--------------------
+
+function myfun() {
+    let x = document.getElementById("read-more");
+    x.style.display="list-item";
+
+    let y = document.getElementById("read-more-btn");
+    y.style.display="none";
+}
+
+
+
+
 // ----------------toggle icon navbar----------------------
 
 let menuIcon = document.querySelector('#menu-icon');
@@ -57,7 +70,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .portfolio-box, contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img ', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 
@@ -65,8 +78,8 @@ ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 // ---------------------typed js-------------------
 
 const typed = new Typed('.multiple-text',{
-    strings: ['Java Developer', 'Backend Developer'],
-    typeSpeed: 100,
+    strings: ['Full Stack Development (HTML, CSS, JAVASCRIPT, JAVA [Spring Boot, Jpa and Hibernate,APIs], SQL)','Advance Data Structures and Algorithms (DSA)'],
+    typeSpeed: 200,
     backSpeed: 100,
     backDelay: 1000,
     loop: true

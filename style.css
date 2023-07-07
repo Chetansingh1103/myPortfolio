@@ -112,6 +112,10 @@ section {
     margin-bottom: 2rem;
 }
 
+#read-more {
+    display: none;
+}
+
 span {
     color: var(--main-color);
 }
@@ -159,7 +163,7 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .btn:hover {
@@ -343,6 +347,7 @@ span {
     background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
+    margin-left: 4rem;
 }
 
 .footer-iconTop a:hover {
@@ -403,13 +408,14 @@ span {
     }
 
     .navbar.active {
-        display: block;
+        display: block;  
     }
 
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        transition: 1s ease;
     }
 
     .home {
@@ -431,9 +437,25 @@ span {
         margin-bottom: 4rem;
     }
 
+    .home-content .social-media {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-content .btn {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
     .about {
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    .about-content .about-me-info{
+        text-align: start;
+        margin-left: 10rem;
+        margin-right: 8rem;
     }
 
     .about h2 {
@@ -444,6 +466,7 @@ span {
     .about img {
         width: 50vw;
         margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     .portfolio {
@@ -451,12 +474,14 @@ span {
     }
 
     .portfolio h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
     }
 
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 4rem;
     }
+
 }
 
 @media (max-width: 617px) {
