@@ -45,11 +45,6 @@ window.onscroll = () => {
         };
     });
 
-    // ---------------------sticky navbar-------------------
-
-    let header = document.querySelector('header');
-
-    header.classList.toggle('sticky',window.scrollY > 100);
 
     // ----------------remove toggle icon navbar when clicked on navbar link(scroll)----------------------
 
@@ -70,7 +65,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .portfolio-box, .contact form, .contact-details', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img ', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 
@@ -79,8 +74,16 @@ ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 
 const typed = new Typed('.multiple-text',{
     strings: ['Full Stack Development (HTML, CSS, JAVASCRIPT, JAVA [Spring Boot, Jpa and Hibernate,APIs], SQL)','Advance Data Structures and Algorithms (DSA)'],
-    typeSpeed: 200,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 30,
+    backSpeed: 30,
+    backDelay: 5000,
+    loop: true
+});
+
+const typed2 = new Typed('.email-text',{
+    strings: ['Boyzingsingh@gmail.com','Backendbot1103@gmail.com'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 5000,
     loop: true
 });

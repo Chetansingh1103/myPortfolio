@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Personal Portfolio Website Design</title>
+    <title>Chetan Singh's Portfolio</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Chetan Singh</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -37,6 +39,7 @@
             <div class="social-media">
                 <a href="https://twitter.com/ChetanSingh3301" target="_blank"><i class='bx bxl-twitter'></i></a>
                 <a href="https://www.linkedin.com/in/chetan-singh-b91381194/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=in" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Chetansingh1103" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
             <a href="files/Resume--7july2023.pdf" download="Resume - Chetan Singh" class="btn">Download Resume</a>
         </div>
@@ -52,8 +55,9 @@
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Full Stack Developement</h3>
             <ul class="about-me-info">
+                <li><p>Skills : <i> Core Java, SQL, OOP's, Spring Boot, JPA and Hibernate, Advance DSA, API's Development, HTML, CSS, Javascript.</i></p></li>
+                <li><p>Solved 200+ Questions on Leetcode : <a href="https://leetcode.com/chetuboy/" target="_blank"><i style="color: chartreuse;">Click here to visit</i></a></p></li>
                 <li><p>Currently pursuing Full Stack Development Course by Acciojob.  <i> (Started in august of 2022)</i></p></li>
                 <li><p>Completed Bachelors of Computer Application(BCA) from Guru Gobind Singh Indraprastha University Delhi.  <i> (2019-2022)</i></p></li>
                 <div id="read-more">
@@ -78,7 +82,7 @@
                     <p>This is a Spring Boot Backend application 
                         where you can book tickets, find shows,etc..
                          </p>
-                    <a href="https://github.com/Chetansingh1103/Book_My_Show"><i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/Chetansingh1103/Book_My_Show" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -87,7 +91,7 @@
                     <h4>Library Management System</h4>
                     <p>This is a Spring application where a student 
                         has card issued, can issue books, etc..</p>
-                    <a href="https://github.com/Chetansingh1103/Student_Library_Management_System"><i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/Chetansingh1103/Student_Library_Management_System" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -95,7 +99,7 @@
                 <div class="portfolio-layer">
                     <h4>Airline System Booking Application</h4>
                     <p>this application is to book Airline tickets for the passengers , etc..</p>
-                    <a href="https://github.com/Chetansingh1103/InteractiveAirLineSystemApp"><i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/Chetansingh1103/InteractiveAirLineSystemApp" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -113,7 +117,13 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form id="contactForm" action="#" method="post">
+        <div class="contact-details">
+            <h2>Via Email : </h2>
+            <p> <span class="email-text"></span></p>
+        </div>
+        
+
+        <!-- <form id="contactForm" action="" method="post">
             <div class="input-box">
                 <input type="text" placeholder="Full Name" name="name" id="name">
                 <input type="email" placeholder="Email Address" name="email" id="email">
@@ -124,7 +134,7 @@
             </div>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <button class="btn" type="submit" >Send Message</button>
-        </form>
+        </form> -->
     </section>
 
     <!-- footer design -->
